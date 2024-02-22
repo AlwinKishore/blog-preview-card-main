@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit&family=Young+Serif&display=swap');
+
+body {
+  font-family: "Figtree", serif;
+  font-size: 16px;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(47, 88%, 63%);
+  height: 90vh;
+  width: 99vw;
+}
+
+/* typography */
+
+h1,
+p{
+    margin: .5em 0;
+}
+
+h1{
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+p{
+    font-size: .9em;
+    line-height: 1.5;
+}
+
+/* layouts */
+.card{
+    width: 80%;
+    max-width: 300px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-shadow: .4em .4em black;
+    transition: all .2s ease-in-out;
+}
+
+.card:hover,
+.card:focus{
+    translate: -1rem -.5rem;
+    box-shadow:  .75em .75em black;
+    transition: all .2s ease-in-out;
+}
+
+.card-header{
+    margin-bottom: 1em;
+}
+
+.blog-img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1rem;
+}
+
+.author-img{
+    width: 2em;
+    height: 2em;
+}
+
+.author{
+    font-weight: 800;
+}
+
+/* elements */
+.tag{
+    padding: .25em .74em;
+    background-color: hsl(47, 88%, 63%);
+    font-size: 14px;
+    font-weight: 800;
+    width: 20%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.published{
+    font-weight: 600;
+}
+
+.blog-heading{
+    text-decoration: none;
+    color: black;
+}
+
+.blog-heading:hover,
+.blog-heading:focus{
+    color: hsl(47, 88%, 63%);
+    cursor: 'pointer';
+    transition: all .3s;
+}
+
+.blog-desc{
+    color: hsl(0, 0%, 50%);
+}
